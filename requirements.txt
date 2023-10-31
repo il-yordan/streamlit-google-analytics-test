@@ -1,0 +1,8 @@
+numpy
+pandas
+altair
+joblib
+streamlit
+streamlit-multipage==0.0.17
+yfinance
+scipy
