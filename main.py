@@ -37,28 +37,40 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
 
-st.components.v1.html('''
-  <!-- Google Verification -->
-  <meta name="google-site-verification" content="m_mBYPST61HjAFX7t9wohBhbNxVM_qux5YHf6Z-O2vo" />
+# st.components.v1.html('''
+#   <!-- Google Verification -->
+#   <meta name="google-site-verification" content="m_mBYPST61HjAFX7t9wohBhbNxVM_qux5YHf6Z-O2vo" />
+#
+#   <!-- Google Analytics -->
+#   <script>
+#     window.ga = window.ga || function () {
+#       (ga.q = ga.q || []).push(arguments)
+#     };
+#     ga.l = +new Date;
+#     ga('create', 'UA-71773079-3', 'auto');
+#     ga('send', 'pageview');
+#   </script>
+#   <script async src='https://www.google-analytics.com/analytics.js'></script>
+#
+#   <!-- Google tag (gtag.js) -->
+#   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRJV04J4YL"></script>
+#   <script>
+#     window.dataLayer = window.dataLayer || [];
+#     function gtag(){dataLayer.push(arguments);}
+#     gtag('js', new Date());
+#
+#     gtag('config', 'G-JRJV04J4YL');
+#   </script>
+# ''')
 
-  <!-- Google Analytics -->
-  <script>
-    window.ga = window.ga || function () {
-      (ga.q = ga.q || []).push(arguments)
-    };
-    ga.l = +new Date;
-    ga('create', 'UA-71773079-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRJV04J4YL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-JRJV04J4YL');
-  </script>
-''')
+st.markdown(
+    """
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRJV04J4YL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JRJV04J4YL');
+        </script>
+    """, unsafe_allow_html=True)
