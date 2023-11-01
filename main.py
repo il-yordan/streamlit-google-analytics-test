@@ -38,40 +38,8 @@ st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
 
 st.components.v1.html('''
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>Test App</title>
-
-
-
   <!-- Google Verification -->
   <meta name="google-site-verification" content="m_mBYPST61HjAFX7t9wohBhbNxVM_qux5YHf6Z-O2vo" />
-
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    iframe {
-      display: block;
-      background: #000;
-      border: none;
-      height: 100vh;
-      width: 100vw;
-    }
-  </style>
-
-</head>
-
-<body>
-
 
   <!-- Google Analytics -->
   <script>
@@ -93,7 +61,4 @@ st.components.v1.html('''
 
     gtag('config', 'G-JRJV04J4YL');
   </script>
-</body>
-
-</html>
 ''')
