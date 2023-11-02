@@ -37,13 +37,13 @@ components.html(
   <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0KNCRVEEZ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRJV04J4YL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-V0KNCRVEEZ');
+  gtag('config', 'G-JRJV04J4YL');
 </script>
     """
 )
